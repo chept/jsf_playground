@@ -1,0 +1,25 @@
+"use strict";
+
+const DOMEvents = [
+  "DOMActivate",
+  "DOMAttrModified",
+  "DOMCharacterDataModified",
+  "DOMNodeInserted",
+  "DOMNodeInsertedIntoDocument",
+  "DOMNodeRemoved",
+  "DOMNodeRemovedFromDocument",
+  "DOMSubtreeModified",
+  "DOMFocusIn",
+  "DOMFocusOut"
+];
+
+for (const dEvt of DOMEvents) {
+
+  document.addEventListener(dEvt,
+    () => {
+
+      console.log("DOM change:", dEvt);
+
+    });
+
+}
