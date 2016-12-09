@@ -1,6 +1,7 @@
 "use strict";
 
 const DOMEvents = [
+  "DOMActivate",
   "DOMAttrModified",
   "DOMCharacterDataModified",
   "DOMNodeInserted",
